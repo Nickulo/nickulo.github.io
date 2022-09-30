@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>
+		Digital Marketing	
+		</title>
+		<link rel="stylesheet" href="00Style.css">
+	</head>
+	<body>
+		<section class="banner" id="sec">
+			<header>
+				<a href="#" class="logo"> Leeto Digital Agency </a>
+				<div id="toggle" onclick="toggle()"></div>
+			</header>
+			<div class="content">
+				<h2><span> Digital Marketing <br> </span> by Nicholas Fares</h2>
+				<p> This is a presentation on Digital Marketing created by Nicholas Fares. The presentation was created by developing multiple web pages.
+					The web pages deal with multiple topics related to Digital Marketing. The information contained in the presentation is a mix of my cultural background and data found on the Internet. The web pages are a fusion of multiple designs that I found on YouTube.</p>
+			</div>
+			<!--
+			<ul class="sci">
+				<li><a href="#"><img src="instagram.png"></a></li>
+				<li><a href="#"><img src="discord.png"></a></li>
+				<li><a href="#"><img src="whatsapp.png"></a></li>
+			</ul>
+		-->
+		</section>
+		<div id="navigation">
+			<ul>
+				<li><a href="01Map.html">Watch the Map</a></li>
+					<script type="text/javascript">
+						const buttons = document.querySelectorAll('a');
+						buttons.forEach(btn => {
+							btn.addEventListener('click',function(e) {
+								let x = e.clientX = e.target.offsetLeft;
+								let y = e.clientY = e.target.offsetTop;
+
+								let ripples = document.createElement('span');
+								ripples.style.left = x + 'px';
+								ripples.style.top = y + 'px';
+								this.appendChild(ripples);
+
+								setTimeout(() => {
+									ripples.remove()
+								},1000);
+							})
+						})
+					</script>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			function toggle(){
+				var sec = document.getElementById('sec');
+				var nav = document.getElementById('navigation');
+				sec.classList.toggle('active')
+				nav.classList.toggle('active')  
+			}
+		</script>
+	</body>
+</html>

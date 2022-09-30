@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Marketing</title>
+    <link rel="stylesheet" href="02Style.css">
+</head>
+<body>
+    
+    <div class="banner"> 
+        <header>
+            <a href="#" class="logo"> Leeto Digital Agency</a>
+            <div class="toggle"></div>
+        </header>
+        <img src="bibl.png">
+        <div class="content">
+            <h2> Basic Theory</h2>
+            <p>Digital marketing is the component of marketing that uses the Internet and online based digital technologies. Its development during the 90s and 2000s changed the way brands and businesses use technology for marketing. Unlike traditional marketing techniques, which involve direct, one-way messaging to consumers (via print, television, and radio advertising), nonlinear digital marketing strategies are centered on reaching prospective customers across multiple online channels.</p>
+
+        </div>
+    </div>
+    
+        <section class="about">
+            <div id="progressbar"></div>
+            <div id="scrollPath"></div>
+            <div class="contentBx">
+                <h2 class="heading">History</h2>
+                <p class="text"> The development of digital marketing is inseparable from technology development. One of the first key events happened in 1971, when Ray Tomlinson sent the first email, and his technology set the platform to allow people to send and receive files through different machines. In the 90s, the term Digital Marketing was first coined, with the debut of server/client architecture and the popularity of personal computers, the Customer Relationship Management (CRM) applications became a significant factor in marketing technology. The Internet development forced vendors to include more service into their software, for example, marketing, sales and service applications. </p>
+            </div>
+            <div class="imgBx"> 
+                
+            </div>
+    
+        </section>
+
+        <section class="services">
+            <h2 class="heading">Conceptual scheme</h2>
+            <p class="text"> Nonlinear marketing strategies involve efforts to adapt the advertising to different platforms, and to tailor the advertising to different individual buyers rather than a large coherent audience. Some studies indicate that consumer responses to traditional marketing approaches are becoming less predictable for businesses. According to a 2018 study, nearly 90% of online consumers in the United States researched products and brands online before visiting the store or making a purchase. The Global Web Index estimated that in 2018, a little more than 50% of consumers researched products on social media.<br> Here is a conceptual scheme to summarize which categories Digital Marketing is divided into.</p>
+            <div class="container">
+                <div class="serviceBx">
+                    <div>
+                        <img src="001DigitalMarketing.png">
+                        <h2> Digital Marketing</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- Divisore -->
+            <div class="container">
+                <div class="serviceCx">
+                    <div>
+                        <img src="SEO.png">
+                        <h2> SEO </h2>
+                    </div>
+                </div>
+                <div class="serviceCx">
+                    <div>
+                        <img src="SEM.png">
+                        <h2> SEM </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="serviceDx">
+                    <div>
+                        <h2> Content Marketing </h2>
+                    </div>
+                </div>
+                <div class="serviceDx">
+                    <div>
+                        <h2> E-Commerce Marketing</h2>
+                    </div>
+                </div>
+                <div class="serviceDx">
+                    <div>
+                        <h2> Influencer Marketing </h2>
+                    </div>
+                </div>
+                <div class="serviceDx">
+                    <div>
+                        <h2> Data-Driven Marketing</h2>
+                    </div>
+                </div>
+                <div class="serviceDx">
+                    <div>
+                        <h2> Social Media Marketing</h2>
+                    </div>
+                </div>
+                <div class="serviceDx">
+                    <div>
+                        <h2> E-mail direct Marketing</h2>
+                    </div>
+                </div>
+                <div class="serviceDx">
+                    <div>
+                        <h2> Etcetera... </h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script type="text/javascript">
+            let progress = document.getElementById('progressbar');
+            let totalHeight = document.body.scrollHeight - window.innerHeight;
+            window.innerHeight;
+            window.onscroll = function(){
+                let progressHeight = (window.pageYOffset / totalHeight) * 100;
+                progress.style.height = progressHeight + "%";
+            }
+            </script>
+            
+
+</body>
+</html>
